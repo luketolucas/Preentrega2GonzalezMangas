@@ -1,0 +1,542 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/*RESET Y FONTS GLOBALES*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto','Times New Roman', Times, serif;
+    font-weight: 300;
+}
+/*-BODY-------------------------------------*/
+
+body {
+    background-color: #DDE6ED;
+}
+
+#index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+/*-BODY TIENDA GRID-------------------------------------*/
+.bodyTienda{
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "section section section section aside"
+    "main main main main aside"
+    "main main main main aside"
+    "footer footer footer footer footer"
+    ;
+}
+
+#headerTienda{
+    grid-area: header;
+}
+#sectionTienda{
+    grid-area: section;
+}
+#mainTienda{
+    grid-area: main;
+
+}
+#asideTienda{
+    grid-area: aside;
+}
+#footerTienda{
+    grid-area: footer;
+}
+
+
+/*-HEADER-------------------------------------*/
+header{
+    position: absolute;
+    opacity: 0.9;
+    background-color: #27374D;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 7px 1px;
+    top: 0;
+    z-index: 99;
+}
+#logo{
+    color:#DDE6ED;
+    height: auto;
+    width: 250px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+h1{
+    font-weight: 300;
+}
+
+/*-NAVEGACION-------------------------------------*/
+header nav{
+    margin: 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    list-style-type:none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #DDE6ED;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 20px;
+    text-transform:uppercase;
+}
+li a:hover {
+    color:#526D82;
+}
+
+/*-MAIN INDEX-------------------------------------*/
+#presentacionPrincipal{
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://wallpapercave.com/wp/wp8824902.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.presentacion1{
+    display: flex;
+    width: 700px;
+    height: auto;
+}
+#textoImagenPresentacion{
+    opacity: 0.7;
+    font-weight:600;
+    font-size:85px ;
+    color: #526D82;
+    text-align: justify;
+    text-transform: uppercase;
+
+}
+/*-SECTION BIENVENIDA-------------------------------------*/
+#bienvenida-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+#bienvenida{
+    padding: 50px;
+    width: 80%
+
+}
+#bienvenida-text{
+    text-align: justify;
+    color:#27374D;
+    font-size: 32px;
+
+}
+/*-SECTION PERTENENCIA-------------------------------------*/
+#introduccion-container{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #9DB2BF;
+    padding: 50px;
+}
+.introduccion1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #27374D;
+    width: 75%;
+    height: 500px;
+
+}
+.parrafo{
+    font-size: 25px;
+    color:#27374D;
+    text-align: justify;
+}
+.imagenIntroduccion{
+    height: 400px;
+    width: 400px;
+}
+
+/*-SECTION COMPRA SEGURO-------------------------------------*/
+#compraSeguroRapidoInformado{
+    background-color: #9DB2BF;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+#container-titulo{
+    padding: 40px;
+    color: #27374D;
+    font-size: 30px;
+}
+#container-descripciones{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+.container-descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 40px;
+}
+
+/*-SECTION RESUMEN-------------------------------------*/
+#resumen-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+#resumen{
+    padding: 50px;
+    width: 80%
+
+}
+#resumen-text{
+    text-align: justify;
+    color:#27374D;
+    font-size: 32px;
+}
+/*-SECTION IMAGEN MUESTRA-------------------------------------*/
+#imagenMuestra-container{
+    width: 100%;
+    background-image: url(https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2019/04/01/69f8b472-5428-11e9-a3ae-f2742b367090_image_hires_131237.PNG?itok=IW1Q4Nqm&v=1554095565);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 7px 1px;
+}
+.imagenMuestra{
+    height: 400px;
+    width: 400px;
+    margin:30px;
+}
+/*-FIN DE PAGINA INDEX-------------------------------------*/
+/*-TIENDA-------------------------------------*/
+#headerTienda{
+    position: relative;
+}
+#mainTienda{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr) ;
+    width: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    background-color: #DDE6ED
+}
+#sectionTienda{
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+#asideTienda{
+    width: auto;
+opacity: 1;
+}
+#footerTienda{
+    opacity: 1;
+}
+.reloj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9DB2BF;
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2)
+}
+.imagenreloj{
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    height: 250px;
+    width: 300px;
+}
+.comprar{
+width: 150px;
+border-radius: 100px;
+border: none;
+background-color: #27374D;
+color: #9DB2BF;
+padding: 10px;
+margin: 10px;
+}
+/*-FORMULARIO PAGINA LOGIN-------------------------------------*/
+form{
+    padding: 100px;
+    border-radius: 100px;
+    margin: 0 auto;
+    width: 650px;
+    height: 450px;
+    text-align: center;
+    background-color: #526D82;
+    color: #9DB2BF;
+    margin-top: 10%;
+    position: sticky;
+}
+input{
+    outline: none;
+    border: 0;
+}
+.field{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    width: 300px;
+    background-color: #9DB2BF;
+}
+label{
+    display: block;
+    text-align: left;
+    padding-left: 80px;
+}
+/*-BOTON DE LOG IN-------------------------------------*/
+#entrar{
+    width: 150px;
+    border-radius: 100px;
+    border: none;
+    background-color: #27374D;
+    color: #9DB2BF;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+/*-FOOTER-------------------------------------*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    color:#9DB2BF;
+    background-color:#526D82;
+    height: auto;
+    padding-top: 40px;
+    width: 100%;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-content h3{
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    font-weight: 300;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+}
+.redes-sociales{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.redes-sociales li{
+    margin: 1rem;
+}
+.redes-sociales a{
+    text-decoration: none;
+
+}
+.footer-bottom{
+    display: flex;
+    background-color: #27374D;
+    color: #526D82;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.footer-bottom h5{
+    margin-bottom: 0;
+    font-size: 14px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+
+}
+
+
+
+/*MOVIL*/
+@media (max-width: 576px){
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li {
+        padding: 20px;
+    }
+/*-MAIN INDEX-------------------------------------*/
+#presentacionPrincipal{
+    width: 100%;
+    height: 1300px;
+}
+.presentacion1{
+    width: 95%;
+    flex-wrap: wrap;
+
+}
+#textoImagenPresentacion{
+    font-size:50px;
+
+}
+/*-SECTION BIENVENIDA-------------------------------------*/
+#bienvenida-container{
+
+    width: 100%;
+}
+#bienvenida{
+    padding: 10x;
+    width: 95%
+
+}
+#bienvenida-text{
+    font-size: 20px;
+
+}
+    #compraSeguroRapidoInformado{
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    #container-titulo{
+        font-size: 20px;
+    }
+    #container-descripciones{
+        flex-wrap: wrap;
+    }
+    #imagenMuestra-container{
+        flex-wrap: wrap;
+    }
+    .imagenMuestra{
+        height: 200px;
+        width: 200px;
+        margin:30px;
+    }
+    #introduccion-container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .introduccion1{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .parrafo{
+        font-size: 16px;
+    }
+    .imagenIntroduccion{
+        height: 400px;
+        width: 400px;
+    }
+    #resumen{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 95%
+    
+    }
+    #resumen-text{
+        font-size: 18px;
+
+
+    }
+
+
+    #sectionTienda{
+        margin: 20px;
+    }
+    #asideTienda{
+        display: none;
+    }
+    .bodyTienda{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "aside"
+        "footer"
+        ;
+    }
+    #mainTienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10,1fr);
+        margin: 20px;
+    }
+    #sectionTienda{
+        flex-wrap: wrap;
+    }
+}
