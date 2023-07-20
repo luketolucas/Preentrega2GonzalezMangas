@@ -1,0 +1,27 @@
+$color: (
+    primary: #27374d,
+    secondary: #526d82,
+    tertiary: #9db2bf,
+    quartenary:#DDE6ED
+);
+
+$botones: (
+  primary: (
+    color-fondo: #27374d,
+    color-texto: #DDE6ED,
+    padding: 10px 20px,
+    border-radius: 5px
+  ),
+  secondary: (
+    color-fondo: #526d82,
+    color-texto: #27374d,
+    padding: 8px 16px,
+    border-radius: 3px
+  ),
+  tertiary: (
+    color-fondo: #9db2bf,
+    color-texto: #27374d,
+    padding: 12px 24px,
+    border-radius: 8px
+  )
+);

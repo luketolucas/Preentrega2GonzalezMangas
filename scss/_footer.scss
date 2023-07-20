@@ -1,0 +1,51 @@
+footer {
+  position: relative;
+  bottom: 0;
+  color: map-get($color, tertiary );
+  background-color: map-get($color, secondary );
+  height: auto;
+  padding-top: 40px;
+  width: 100%;
+  .footer-content {
+    @include flexCenter;
+    flex-direction: column;
+    h3 {
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+    p {
+      font-weight: 300;
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 20px;
+    }
+    .redes-sociales {
+      list-style: none;
+      @include flexCenter;
+      margin: 10px;
+    }
+    li {
+      margin: 1rem;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .footer-bottom {
+    @include flexCenter;
+    background-color: map-get($color, primary);
+    color: map-get($color, secondary );
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    h5 {
+      margin-bottom: 0;
+      font-size: 14px;
+      word-spacing: 3px;
+      text-transform: capitalize;
+    }
+  }
+}

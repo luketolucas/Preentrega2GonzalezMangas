@@ -1,0 +1,25 @@
+#mainProducto{
+    @include flexCenter ;
+    height: auto;
+    margin: 10px;
+    background-color: map-get($color , tertiary );
+    #productoContent{
+        @include flexCenter;
+        flex-direction: column;
+    }
+    #productoDescripcion{
+        background-color: map-get($color , secondary );
+        display: flex;
+        align-items: start;
+        justify-items: start;
+        width: 40%;
+        height: 600px;
+    }
+}
+main p{
+    padding: 5px;
+    font-size: 30px;
+    color:map-get($color , primary );
+}
+
+

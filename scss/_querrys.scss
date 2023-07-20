@@ -1,0 +1,171 @@
+/*Tablet*/
+@media (max-width: 997px) {
+}
+/*MOVIL*/
+@media (max-width: 576px) {
+  /*-MAIN INDEX-------------------------------------*/
+  #presentacionPrincipal {
+    height: 850px;
+    #presentacion1 {
+      width: 95%;
+      flex-wrap: wrap;
+    }
+    #textoImagenPresentacion {
+      font-size: 60px;
+      font-weight: 400;
+    }
+  }
+
+  /*-SECTION BIENVENIDA-------------------------------------*/
+  #bienvenida-container {
+    width: 100%;
+    #bienvenida {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 30px;
+      width: 95%;
+      #bienvenida-text {
+        font-size: 25px;
+      }
+    }
+  }
+  /*-SECTION CONFIABILIDAD-------------------------------------*/
+  #compraSeguroRapidoInformado {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    #container-descripciones {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+      .container-descripcion {
+        width: 300px;
+        .parrafo {
+          font-size: 25px;
+        }
+        .imagenMuestra1 {
+          height: 300px;
+          width: 300px;
+        }
+      }
+    }
+    #container-titulo {
+      font-size: 35px;
+    }
+  }
+  #imagenMuestra-container {
+    flex-wrap: wrap;
+  }
+
+  /*-SECTION PERTENENCIA-------------------------------------*/
+  #introduccion-container {
+
+    .introduccion1 {
+      margin: 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+      .parrafo {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 20px;
+      }
+      .imagenIntroduccion {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 400px;
+        width: 350px;
+      }
+    }
+  }
+  /*-SECTION RESUMEN-------------------------------------*/
+  #resumen-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    #resumen {
+      padding: 20px;
+      width: 80%;
+    }
+    #resumen-text {
+      font-size: 20px;
+    }
+  }
+  /*-FIN DE INDEX-------------------------------------*/
+
+  /*-TIENDA-------------------------------------*/
+  #bodyTienda {
+    background-color: aqua;
+    height: auto;
+    grid-template-areas:
+      "headerr"
+      "section"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  #sectionTienda {
+    width: auto;
+    height: 200px;
+    @include flexCenter;
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+  }
+
+  #asideTienda {
+    row-gap: 1px;
+  }
+
+  #mainTienda {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(15, 1fr);
+    width: 150px;
+    margin: 1px;
+    row-gap: 1px;
+    column-gap: 1px;
+    grid-auto-flow: column;
+  }
+  /*-FIN DE TIENDA TOTALMENTE ROTA NO SE QUE FALLA-------------------------------------*/
+
+  /*-NOSOTROS-------------------------------------*/
+  #texto {
+    margin: 0px;
+    padding: 0px;
+  }
+  main div {
+    width: 100%;
+    margin: 1px;
+    padding: 1px;
+  }
+  .nosotros-texto {
+    padding: 1px;
+    margin: 1px;
+    width: auto;
+    height: auto;
+    font-size: 1px;
+  }
+  .nosotros-texto2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+  }
+  .imagenNosotros {
+    padding: 15px;
+    width: 340px;
+    height: 400px;
+  }
+  #sectionNosotros {
+    margin: 2px;
+    font-size: 20px;
+  }
+  #sectionNosotros div {
+    width: 95%;
+  }
+
+  #sectionNosotros div div {
+    width: 95%;
+  }
+} 

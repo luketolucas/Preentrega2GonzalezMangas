@@ -1,0 +1,146 @@
+/*-MAIN INDEX-------------------------------------*/
+#presentacionPrincipal {
+  width: 100%;
+  height: 1000px;
+  background-image: url(https://wallpapercave.com/wp/wp8824902.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flexCenter;
+  #presentacion1 {
+    @include flexCenter;
+    flex-wrap: wrap;
+    width: 950px;
+    height: auto;
+  }
+  #textoImagenPresentacion {
+    font-weight: 600;
+    font-size: 85px;
+    color: map-get($color, secondary );
+    text-align: justify;
+    text-transform: uppercase;
+  }
+}
+
+
+
+/*-SECTION BIENVENIDA-------------------------------------*/
+#bienvenida-container {
+  margin-top: 10px;
+  @include flexCenter;
+  height: auto;
+  width: 100%;
+  #bienvenida {
+    padding: 50px;
+    width: 80%;
+    #bienvenida-text {
+        text-align: justify;
+        color: map-get($color, primary );
+        font-size: 32px;
+      }
+  }
+}
+
+
+/*-SECTION PERTENENCIA-------------------------------------*/
+#introduccion-container {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  @include flexCenter;
+  flex-direction: column;
+  background-color: map-get($color, tertiary );
+  .introduccion1 {
+    @include flexCenter;
+    color: map-get($color, primary );
+    width: 75%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    .parrafo {
+        font-size: 25px;
+        color: map-get($color, primary );
+        text-align: justify;
+      }
+      .imagenIntroduccion {
+        height: 400px;
+        width: 400px;
+      } 
+  }
+}
+
+
+
+
+/*-SECTION COMPRA SEGURO-------------------------------------*/
+#compraSeguroRapidoInformado {
+  background-color: map-get($color, tertiary );
+  @include borderRadius(10px);
+  margin-top: 10px;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  @include flexCenter;
+  #container-descripciones {
+    @include flexCenter;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    .container-descripcion {
+        @include flexCenter;
+      flex-direction: column;
+      height: auto;
+      width: 300px;
+      margin: 40px;
+      .parrafo {
+        font-size: 20px;
+        color: map-get($color, primary);
+        text-align: justify;
+      }
+      .imagenMuestra1 {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  #container-titulo {
+    margin: 40px;
+    color: map-get($color, primary );
+    font-size: 30px;
+  }
+}
+
+/*-SECTION RESUMEN-------------------------------------*/
+#resumen-container {
+  margin-top: 10px;
+  @include flexCenter;
+  height: auto;
+  width: 100%;
+  #resumen {
+    padding: 50px;
+    width: 80%;
+  }
+  #resumen-text {
+    text-align: justify;
+    color: map-get($color, primary );
+    font-size: 32px;
+  }
+}
+
+/*-SECTION IMAGEN MUESTRA-------------------------------------*/
+#imagenMuestra-container {
+  width: 100%;
+  background-image: url(https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2019/04/01/69f8b472-5428-11e9-a3ae-f2742b367090_image_hires_131237.PNG?itok=IW1Q4Nqm&v=1554095565);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flexCenter;
+  flex-wrap: wrap;
+  @include boxShadow(0px, 0px, 7px, 1px, rgba(0, 0, 0, 0.2)) ;
+  .imagenMuestra {
+    height: 400px;
+    width: 390px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

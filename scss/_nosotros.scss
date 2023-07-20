@@ -1,0 +1,61 @@
+#bodyNosotros{
+    height: auto;
+}
+#texto{
+    margin: 20px;
+    @include flexCenter;
+    flex-wrap: wrap;
+    font-size: 20px;
+    height: auto;
+    
+}
+main div{
+    @include flexCenter;
+    flex-wrap: wrap;
+    height: auto;
+    width: 75%;
+    margin: 15px;
+    padding: 10px;
+    @include borderRadius(10px);
+}
+.nosotros-texto{
+    padding: 15px;
+    margin: 15px;
+    width: 600px;
+    height: auto;
+    font-size: 1.1rem;
+}
+.nosotros-texto2{
+    width: 90%;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+.imagenNosotros{
+    padding: 15px;
+    width: 500px; 
+    height: 400px;
+    @include borderRadius(25px);
+    
+}
+#sectionNosotros{
+    margin: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include flexCenter;
+    font-size: 20px;
+    height: auto;
+    
+}
+#sectionNosotros div{
+        @include flexCenter;
+        flex-wrap: wrap;
+        width: 75%;
+        @include borderRadius(10px);
+    }
+
+#sectionNosotros div div{
+    @include flexCenter;
+    width: 75%;
+    @include borderRadius(10px);
+}

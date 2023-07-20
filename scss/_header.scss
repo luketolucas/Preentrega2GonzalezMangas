@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:map-get($color , primary );
+    @include opacity(1);
+    .navbar-brand {
+      flex-grow: 1;
+      font-size: 50px;
+      color: map-get($color, quartenary );
+      text-align: center;
+      border-right: 3px;
+      border-color: map-get($color, quartenary );
+    } 
+    .navbar-brand:hover {
+      color: map-get($color, secondary );
+      animation: pulse;
+      animation-duration: 0.3s;
+    }
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+    .nav-link {
+      color: map-get($color, quartenary );
+      font-size: 30px;
+      margin-right: 10px;
+    }
+    .nav-link:hover {
+      color: map-get($color, secondary );
+      animation: pulse;
+      animation-duration: 0.3s;
+    }
+  }

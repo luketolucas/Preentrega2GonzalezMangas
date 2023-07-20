@@ -1,0 +1,107 @@
+#bodyTienda{
+    background-color: map-get($color, quartenary );
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "headerr headerr headerr headerr headerr"
+    "section section section section section"
+    "main main main main aside"
+    "main main main main aside"
+    "footer footer footer footer footer"
+    ;
+}
+
+#headerTienda{
+    grid-area: headerr;
+}
+#sectionTienda{
+    grid-area: section;
+}
+#mainTienda{
+    grid-area: main;
+
+}
+#asideTienda{
+    grid-area: aside;
+}
+#footerTienda{
+    grid-area: footer;
+}
+
+
+
+#mainTienda{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr) ;
+    width: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    background-color: map-get($color, quartenary );
+    margin-top: 10px;
+}
+#sectionTienda{
+height: 200px;
+@include flexCenter;
+margin:10px;
+padding: 10px;
+background-color: map-get($color,tertiary );
+}
+#sectionTienda-content{
+    margin: 15px;
+
+}
+
+
+#asideTienda{
+ width: auto;
+ @include opacity(1);
+margin: 10px;
+padding: 10px;
+background-color: map-get($color, tertiary );
+
+#asideTienda-content{
+    @include flexCenter;
+    flex-direction: column;
+}
+}
+#footerTienda{
+    @include opacity(1);
+}
+.reloj{
+    @include flexCenter;
+    flex-direction: column;
+    background-color: map-get($color, tertiary);
+    height: 400px;
+    width: 350px;
+    @include borderRadius(30px);
+    @include boxShadow(2px, 5px, 7px, 1px, rgba(0, 0, 0, 0.2));
+}
+.imagenreloj{
+    @include borderRadius(30px);
+    padding: 10px;
+    text-align: center;
+    height: 250px;
+    width: 300px;
+}
+.comprar{
+    width: 150px;
+    @include borderRadius(100px);
+    border: none;
+    background-color: map-get($color, primary );
+    color: map-get($color, tertiary );
+    padding: 10px;
+    margin: 10px;
+    @include boxShadow(2px, 5px, 7px, 1px, rgba(0, 0, 0, 0.2));
+    
+}
+.comprar:hover{
+        background-color: #1f273e;
+        animation: pulse;
+        animation-duration: 2s;
+    }
