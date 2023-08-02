@@ -7,7 +7,6 @@
   background-color: #27374d;
   opacity: 1;
 }
-
 .navbar .navbar-brand {
   flex-grow: 1;
   font-size: 50px;
@@ -16,24 +15,20 @@
   border-right: 3px;
   border-color: #DDE6ED;
 }
-
 .navbar .navbar-brand:hover {
   color: #526d82;
   animation: pulse;
   animation-duration: 0.3s;
 }
-
 .navbar .navbar-nav {
   display: flex;
   align-items: center;
 }
-
 .navbar .nav-link {
   color: #DDE6ED;
   font-size: 30px;
   margin-right: 10px;
 }
-
 .navbar .nav-link:hover {
   color: #526d82;
   animation: pulse;
@@ -49,21 +44,18 @@ footer {
   padding-top: 40px;
   width: 100%;
 }
-
 footer .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 footer .footer-content h3 {
   font-size: 3rem;
   font-weight: 300;
   text-transform: capitalize;
   line-height: 3rem;
 }
-
 footer .footer-content p {
   font-weight: 300;
   max-width: 500px;
@@ -71,7 +63,6 @@ footer .footer-content p {
   line-height: 28px;
   font-size: 20px;
 }
-
 footer .footer-content .redes-sociales {
   list-style: none;
   display: flex;
@@ -80,15 +71,12 @@ footer .footer-content .redes-sociales {
   margin: 10px;
   padding-left: 0;
 }
-
 footer .footer-content li {
   margin: 1rem;
 }
-
 footer .footer-content a {
   text-decoration: none;
 }
-
 footer .footer-bottom {
   display: flex;
   justify-content: center;
@@ -99,7 +87,6 @@ footer .footer-bottom {
   padding: 10px;
   height: auto;
 }
-
 footer .footer-bottom h5 {
   margin-bottom: 0;
   font-size: 14px;
@@ -207,7 +194,6 @@ label {
   justify-content: center;
   align-items: center;
 }
-
 #presentacionPrincipal #presentacion1 {
   display: flex;
   justify-content: center;
@@ -216,7 +202,6 @@ label {
   width: 950px;
   height: auto;
 }
-
 #presentacionPrincipal #presentacion1 #textoImagenPresentacion {
   font-weight: 600;
   font-size: 85px;
@@ -234,18 +219,15 @@ label {
   height: auto;
   width: 100%;
 }
-
 #bienvenida-container #bienvenida {
   padding: 50px;
   width: 80%;
 }
-
 #bienvenida-container #bienvenida h1 {
   text-align: center;
   color: #27374d;
   padding-bottom: 30px;
 }
-
 #bienvenida-container #bienvenida #bienvenida-text {
   text-align: justify;
   color: #27374d;
@@ -263,7 +245,6 @@ label {
   flex-direction: column;
   background-color: #9db2bf;
 }
-
 #introduccion-container .introduccion1 {
   display: flex;
   justify-content: center;
@@ -274,13 +255,11 @@ label {
   margin: 10px;
   padding: 10px;
 }
-
 #introduccion-container .introduccion1 .parrafo {
   font-size: 25px;
   color: #27374d;
   text-align: justify;
 }
-
 #introduccion-container .introduccion1 .imagenIntroduccion {
   height: 400px;
   width: 400px;
@@ -299,16 +278,14 @@ label {
   justify-content: center;
   align-items: center;
 }
-
 #compraSeguroRapidoInformado #container-descripciones {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
 }
-
 #compraSeguroRapidoInformado #container-descripciones .container-descripcion {
   display: flex;
   justify-content: center;
@@ -318,18 +295,15 @@ label {
   width: 300px;
   margin: 40px;
 }
-
 #compraSeguroRapidoInformado #container-descripciones .container-descripcion .parrafo {
   font-size: 20px;
   color: #27374d;
   text-align: justify;
 }
-
 #compraSeguroRapidoInformado #container-descripciones .container-descripcion .imagenMuestra1 {
   width: 300px;
   height: 300px;
 }
-
 #compraSeguroRapidoInformado #container-titulo {
   margin: 40px;
   color: #27374d;
@@ -345,12 +319,10 @@ label {
   height: auto;
   width: 100%;
 }
-
 #resumen-container #resumen {
   padding: 50px;
   width: 80%;
 }
-
 #resumen-container #resumen-text {
   text-align: justify;
   color: #27374d;
@@ -370,7 +342,6 @@ label {
   flex-wrap: wrap;
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
 #imagenMuestra-container .imagenMuestra {
   height: 400px;
   width: 370px;
@@ -481,7 +452,6 @@ label {
   height: 200px;
   padding: 10px;
 }
-
 .productoTitulo .tituloProductoReloj {
   color: #27374d;
   text-transform: uppercase;
@@ -500,11 +470,9 @@ label {
   /*Imagen Reloj*/
   /*Especificaciones Reloj*/
 }
-
 .containerPrincipal .carouselContainer .imagenRelojRolex {
   border-radius: 10px;
 }
-
 .containerPrincipal .especificaciones {
   padding: 10px;
   padding-bottom: 0px;
@@ -512,7 +480,6 @@ label {
   border-radius: 10px;
   flex-direction: column;
 }
-
 .containerPrincipal .especificaciones .tituloEspecificaciones {
   color: #27374d;
   font-weight: 200;
@@ -522,7 +489,6 @@ label {
   border-color: #526d82;
   border-style: solid;
 }
-
 .containerPrincipal .especificaciones .EspecificacionesPa {
   color: #27374d;
   font-weight: 100;
@@ -533,11 +499,9 @@ label {
   border-style: solid;
   text-align: justify;
 }
-
 .containerPrincipal .especificaciones .descripcionPa {
   text-align: justify;
 }
-
 .containerPrincipal .comprar-producto {
   align-self: center;
   height: 50px;
@@ -550,12 +514,10 @@ label {
   margin: 5px;
   box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
 .containerPrincipal .comprar-producto .comprarProduct {
   text-decoration: none;
   color: #9db2bf;
 }
-
 .containerPrincipal .comprar-producto:hover {
   background-color: #1f273e;
   animation: pulse;
@@ -585,14 +547,13 @@ label {
   flex-wrap: wrap;
   row-gap: 30px;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   justify-content: center;
   background-color: #DDE6ED;
   width: auto;
   height: auto;
   margin: 50px;
 }
-
 #mainTienda .reloj {
   display: flex;
   justify-content: center;
@@ -606,14 +567,12 @@ label {
   border-radius: 30px;
   box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
 #mainTienda .reloj .imagenreloj {
   border-radius: 30px;
   text-align: center;
   height: 200px;
   width: 200px;
 }
-
 #mainTienda .reloj .relojPro {
   border-top: 10px;
   border-color: #1f273e;
@@ -621,20 +580,17 @@ label {
   flex-direction: column;
   width: 300px;
 }
-
 #mainTienda .reloj .relojPro .relojProducto {
   text-align: center;
   color: #27374d;
   text-transform: uppercase;
   font-size: 15px;
 }
-
 #mainTienda .reloj .relojPro .relojPrecio {
   text-align: center;
   color: #27374d;
   font-size: 18px;
 }
-
 #mainTienda .reloj .relojPro .comprar {
   align-self: center;
   height: auto;
@@ -647,12 +603,10 @@ label {
   margin: 5px;
   box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
 #mainTienda .reloj .relojPro .comprar .comprarProducto {
   text-decoration: none;
   color: #9db2bf;
 }
-
 #mainTienda .reloj .relojPro .comprar:hover {
   background-color: #1f273e;
   animation: pulse;
@@ -669,11 +623,9 @@ label {
   background-color: #e8eeff;
   box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
 #sectionTienda #sectionTienda-content {
   margin: 15px;
 }
-
 #sectionTienda #sectionTienda-content .TiendaSection {
   text-align: center;
   font-size: 50px;
@@ -689,7 +641,6 @@ label {
   opacity: 1;
   background-color: #27374d;
 }
-
 #asideTienda #asideTienda-content {
   display: flex;
   justify-content: center;
@@ -697,12 +648,10 @@ label {
   flex-direction: column;
   margin: 40px;
 }
-
 #asideTienda #asideTienda-content .asideTiendaEncabezado {
   color: #DDE6ED;
   font-size: 50px;
 }
-
 #asideTienda #asideTienda-content .asideTiendaParrafo {
   color: #DDE6ED;
   font-size: 25px;
@@ -745,17 +694,14 @@ label {
 #resumen-container {
   margin-top: 15px;
 }
-
 #resumen-container #resumen {
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
 }
-
 #resumen-container #resumen-text {
   font-size: 25px;
 }
-
 #resumen-container .asideTienda {
   max-width: none;
   width: 100%;
@@ -1006,6 +952,4 @@ body {
 /*-NAVBAR/HEADER-------------------------------------*/
 /*-TIENDA-------------------------------------*/
 /*-FORMULARIO PAGINA LOGIN-------------------------------------*/
-/*-BOTON DE LOG --------------------------------*/ 
-
-/*# sourceMappingURL=estilos.css.map */
+/*-BOTON DE LOG --------------------------------*//*# sourceMappingURL=estilos.css.map */

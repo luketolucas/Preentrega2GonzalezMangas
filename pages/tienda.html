@@ -1,142 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P4KK4RD Watches & CO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-</head>
+  <head>
+    <!--METADATOS-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAKKARD | Watches & CO</title>
 
-<body id="bodyTienda">
-<!--HEADER EN BOOTSTRAP-->
-<header id="headerTienda">
-    <nav class=" navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">PAKKARD</a>
-          <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./login.html">Log in</a>
-              </li>
-            </ul>
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--ANIMACIONES AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <!--FAVICONS EN 3 MEDIDAS-->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+  </head>
+
+  <body>
+    <div id="bodyTienda">
+      <!--HEADER EN BOOTSTRAP-->
+      <header id="headerTienda">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">PAKKARD</a>
+            <button
+              class="navbar-toggler bg-secondary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./login.html">Log in</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--SECTION TIENDA-->
+      <section id="sectionTienda">
+        <div id="sectionTienda-content">
+          <h1 class="TiendaSection">
+            Compra en nuestra tienda online con los mejores descuentos
+          </h1>
+        </div>
+      </section>
+
+      <!--TIENDA-->
+      <main id="mainTienda">
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/21/49/83/9/2149839.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
           </div>
         </div>
-      </nav>
-</header>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/1E/4F/wD/4p/Ik/-j/xx/sc/08/u7/eg/1E4FwD4pIk-jxxsc08u7eg.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/DN/1K/O7/Ju/dE/CQ/Jp/5P/TJ/ZK/GA/DN1KO7JudECQJp5PTJZKGA.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/cT/ss/gM/98/40/an/sZ/ZU/sh/z0/fQ/cTssgM9840ansZZUshz0fQ.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/bo/sh/9z/tu/uU/Ck/ks/cT/4M/GG/AA/bosh9ztuuUCkkscT4MGGAA.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/Ar/0y/WQ/FB/aE/OE/RQ/h7/i-/2q/iw/Ar0yWQFBaEOERQh7i-2qiw.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+            <img
+              class="imagenreloj"
+              src="https://www.iwc.com/content/dam/rcq/iwc/3x/rz/Aq/V-/40/m7/5o/F0/fP/mQ/nA/3xrzAqV-40m75oF0fPmQnA.png.transform.global_image_png_540.png"
+              alt="imagen reloj"
+            />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/23/48/02/0/2348020.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/21/49/85/9/2149859.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+        <div class="reloj">
+          <img
+            class="imagenreloj"
+            src="https://www.iwc.com/content/dam/rcq/iwc/21/49/88/2/2149882.png.transform.global_image_png_540.png"
+            alt="imagen reloj"
+          />
+          <div class="relojPro">
+            <p class="relojProducto">Reloj Rolex Diver Watch 48mm</p>
+            <p class="relojPrecio">$4950</p>
+            <button type="submit" class="comprar"><a class="comprarProducto" href="./producto.html">Comprar</a></button>
+          </div>
+        </div>
+      </main>
 
-    <section id="sectionTienda">
-        <div id="sectionTienda-content">
-        <p class="parrafo">Compra en nuestra tienda online con los mejores descuentos</p>
-    </div>
-    </section>
-    <main id="mainTienda">
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/21/49/83/9/2149839.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
+      <!--ASIDE TIENDA-->
+      <aside id="asideTienda">
+        <div id="asideTienda-content">
+          <h3 class="asideTiendaEncabezado">PAKKARD</h3>
+          <p class="asideTiendaParrafo">Expertos en relojes</p>
+          <p class="asideTiendaParrafo">
+            Desde diseños clásicos hasta las últimas tendencias de vanguardia,
+            cada reloj exhibe una sofisticación atemporal y una artesanía
+            impecable. Nuestro equipo de asesores altamente capacitados te
+            guiará en el proceso de selección para que encuentres la pieza
+            perfecta que complementará tu estilo y personalidad única. Descubre
+            la distinción que solo Pakkard puede ofrecer y lleva contigo un
+            tesoro que trasciende el tiempo. Te invitamos a sumergirte en una
+            experiencia de compra inigualable y a descubrir por qué Pakkard es
+            la elección definitiva para los amantes de los relojes de lujo.
+          </p>
         </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/1E/4F/wD/4p/Ik/-j/xx/sc/08/u7/eg/1E4FwD4pIk-jxxsc08u7eg.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/DN/1K/O7/Ju/dE/CQ/Jp/5P/TJ/ZK/GA/DN1KO7JudECQJp5PTJZKGA.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/cT/ss/gM/98/40/an/sZ/ZU/sh/z0/fQ/cTssgM9840ansZZUshz0fQ.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/bo/sh/9z/tu/uU/Ck/ks/cT/4M/GG/AA/bosh9ztuuUCkkscT4MGGAA.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/Ar/0y/WQ/FB/aE/OE/RQ/h7/i-/2q/iw/Ar0yWQFBaEOERQh7i-2qiw.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/3x/rz/Aq/V-/40/m7/5o/F0/fP/mQ/nA/3xrzAqV-40m75oF0fPmQnA.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/23/48/02/0/2348020.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/21/49/85/9/2149859.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="reloj">
-            <img class="imagenreloj" src="https://www.iwc.com/content/dam/rcq/iwc/21/49/88/2/2149882.png.transform.global_image_png_540.png" alt="imagen reloj">
-            <div>
-                <button type="submit" class="comprar">Comprar</button>
-            </div>
-        </div>
+      </aside>
 
-    </main>
-<aside id="asideTienda">
-    <div id="asideTienda-content">
-    <h3>PAKKARD</h3>
-    <p>Expertos en relojes</p>
-    </div>
-</aside>
-
-    <footer id="footerTienda">
+      <!--FOOTER-->
+      <footer id="footerTienda">
         <div class="footer-content">
-            <h3>PAKKARD relojes de lujo</h3>
-            <p>Seguinos en nuestras redes sociales</p>
-            <ul class="redes-sociales">
-            <li><a href="#"><img src="../img/instragram icono.png" alt="instragram"></a></li>
-            <li><a href="#"><img src="../img/icons8-twitter-50.png" alt="twitter"></a></li>
-            <li><a href="#"><img src="../img/icons8-facebook-50.png" alt="facebook"></a></li>
-            </ul>
+          <h3>PAKKARD relojes de lujo</h3>
+          <p>Seguinos en nuestras redes sociales</p>
+          <ul class="redes-sociales">
+            <li>
+              <a href="#"
+                ><img src="../img/instragram icono.png" alt="instragram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../img/icons8-twitter-50.png" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../img/icons8-facebook-50.png" alt="facebook"
+              /></a>
+            </li>
+          </ul>
         </div>
         <div class="footer-bottom">
-            <h5>copyright &copy;2023 PAKKARD. designed by lucas gonzalez mangas </h5>
+          <h5>
+            copyright &copy;2023 PAKKARD. designed by lucas gonzalez mangas
+          </h5>
         </div>
-    </footer>
+      </footer>
+    </div>
+    <!--SCRIPTS-->
     <script>
-        AOS.init();
-      </script>
-</body>
+      AOS.init();
+    </script>
+  </body>
 </html>

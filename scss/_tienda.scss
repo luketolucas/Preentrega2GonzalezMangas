@@ -1,107 +1,136 @@
-#bodyTienda{
-    background-color: map-get($color, quartenary );
-    height: auto;
-    display: grid;
-    grid-template-areas: 
+/*GRILLA HECHA CON GRID DE LA PAGINA*/
+#bodyTienda {
+  background-color: map-get($color, quartenary);
+  display: grid;
+  grid-template-areas:
     "headerr headerr headerr headerr headerr"
     "section section section section section"
-    "main main main main aside"
-    "main main main main aside"
-    "footer footer footer footer footer"
-    ;
+    "main     main    main   main    aside"
+    "main     main    main   main    aside"
+    "footer  footer  footer  footer  footer";
+  grid-template-columns: 1fr, 1fr, 1fr, 0.2fr;
 }
+#headerTienda {
+  grid-area: headerr;
+}
+#footerTienda {
+  grid-area: footer;
+}
+/*MAIN DE LA TIENDA, CARDS*/
+#mainTienda {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 40px;
+  justify-content: center;
+  background-color: map-get($color, quartenary);
+  width: auto;
+  height: auto;
+  margin: 50px;
 
-#headerTienda{
-    grid-area: headerr;
-}
-#sectionTienda{
-    grid-area: section;
-}
-#mainTienda{
-    grid-area: main;
-
-}
-#asideTienda{
-    grid-area: aside;
-}
-#footerTienda{
-    grid-area: footer;
-}
-
-
-
-#mainTienda{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(5,1fr) ;
-    width: auto;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    height: auto;
-    background-color: map-get($color, quartenary );
-    margin-top: 10px;
-}
-#sectionTienda{
-height: 200px;
-@include flexCenter;
-margin:10px;
-padding: 10px;
-background-color: map-get($color,tertiary );
-}
-#sectionTienda-content{
-    margin: 15px;
-
-}
-
-
-#asideTienda{
- width: auto;
- @include opacity(1);
-margin: 10px;
-padding: 10px;
-background-color: map-get($color, tertiary );
-
-#asideTienda-content{
-    @include flexCenter;
-    flex-direction: column;
-}
-}
-#footerTienda{
-    @include opacity(1);
-}
-.reloj{
+  .reloj {
     @include flexCenter;
     flex-direction: column;
     background-color: map-get($color, tertiary);
-    height: 400px;
-    width: 350px;
-    @include borderRadius(30px);
-    @include boxShadow(2px, 5px, 7px, 1px, rgba(0, 0, 0, 0.2));
-}
-.imagenreloj{
-    @include borderRadius(30px);
-    padding: 10px;
-    text-align: center;
-    height: 250px;
+    justify-content: center;
+    align-items: center;
     width: 300px;
-}
-.comprar{
-    width: 150px;
-    @include borderRadius(100px);
-    border: none;
-    background-color: map-get($color, primary );
-    color: map-get($color, tertiary );
     padding: 10px;
-    margin: 10px;
+
+    @include borderRadius(30px);
     @include boxShadow(2px, 5px, 7px, 1px, rgba(0, 0, 0, 0.2));
-    
-}
-.comprar:hover{
+
+    .imagenreloj {
+      @include borderRadius(30px);
+      text-align: center;
+      height: 200px;
+      width: 200px;
+    }
+    .relojPro {
+      border-top: 10px;
+      border-color: #1f273e;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      .relojProducto {
+        text-align: center;
+        color: map-get($color, primary);
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+      .relojPrecio {
+        text-align: center;
+        color: map-get($color, primary);
+        font-size: 18px;
+      }
+      .comprar {
+        align-self: center;
+        height: auto;
+        width: 150px;
+        @include borderRadius(100px);
+        border: none;
+        background-color: map-get($color, primary);
+        color: map-get($color, tertiary);
+        padding: 5px;
+        margin: 5px;
+        @include boxShadow(2px, 5px, 7px, 1px, rgba(0, 0, 0, 0.2));
+        .comprarProducto {
+          text-decoration: none;
+          color: map-get($color, tertiary);
+        }
+      }
+      .comprar:hover {
         background-color: #1f273e;
         animation: pulse;
         animation-duration: 2s;
+      }
     }
+  }
+}
+/*SECTION DE LA TIENDA "COMPRAR EN NUESTRA TIENDA...."*/
+#sectionTienda {
+  grid-area: section;
+  height: 200px;
+  @include flexCenter;
+  background-color: #e8eeff;
+  @include boxShadow(2px, 5px, 7px, 1px, rgba(0, 0, 0, 0.2));
+  #sectionTienda-content {
+    margin: 15px;
+    .TiendaSection {
+      text-align: center;
+      font-size: 50px;
+      color: map-get($color, primary);
+    }
+  }
+
+}
+
+
+/*ASIDE PAKKARD EXPERTOS EN RELOJES*/
+#asideTienda {
+  grid-area: aside;
+  @include flexCenter;
+  @include opacity(1);
+  background-color: map-get($color, primary);
+
+  #asideTienda-content {
+    @include flexCenter;
+    flex-direction: column;
+    margin: 40px;
+    .asideTiendaEncabezado {
+      color: map-get($color, quartenary);
+      font-size: 50px;
+    }
+    .asideTiendaParrafo {
+      color: map-get($color, quartenary);
+      font-size: 25px;
+      text-align: justify;
+    }
+  }
+  
+  
+}
+#footerTienda {
+  @include opacity(1);
+}

@@ -1,17 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 @import 'mixing';
 @import 'maps';
 @import 'header';
 @import 'footer';
 @import 'login';
 @import 'index';
-@import 'querrys';
-@import 'tienda';
 @import 'nosotros';
 @import 'producto';
-
+@import 'tienda';
+@import 'querrys';
 
 /*FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+
 
 /*RESET Y FONTS GLOBALES*/
 * {
@@ -26,6 +27,7 @@
 body {
   background-color: #dde6ed;
   height: auto;
+  width: 100%;
 }
 
 /*-NAVBAR/HEADER-------------------------------------*/
@@ -42,10 +44,9 @@ body {
 
 /*-FORMULARIO PAGINA LOGIN-------------------------------------*/
 
-/*-BOTON DE LOG IN-------------------------------------*/
+/*-BOTON DE LOG --------------------------------*/
 
 
-/*-FOOTER-------------------------------------*/
 
 
 
